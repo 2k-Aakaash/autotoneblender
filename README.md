@@ -13,11 +13,11 @@ Gradient Generator is a web application that allows you to create beautiful and 
 
 ## Demo
 
-You can try out Gradient Generator by visiting the [live demo]([https://your-demo-link-here.com](https://autotoneblender.vercel.app/)).
+You can try out Gradient Generator by visiting the [live demo]((https://autotoneblender.vercel.app/)).
 
 ## Installation
 
-You don't need to install anything to use Gradient Generator. Simply open the [live demo]([https://your-demo-link-here.com](https://autotoneblender.vercel.app/)) in your web browser, and you're ready to create gradients!
+You don't need to install anything to use Gradient Generator. Simply open the [live demo]((https://autotoneblender.vercel.app/)) in your web browser, and you're ready to create gradients!
 
 ## Usage
 
