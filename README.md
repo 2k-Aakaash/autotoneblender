@@ -33,5 +33,4 @@ You don't need to install anything to use Gradient Generator. Simply open the [l
 
 ---
 Best,
-
 2K Aakaash
