@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+body {
+    margin: 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100vh;
+    background: linear-gradient(to right, #ff5733, #f4ff33);
+    transition: background 0.5s ease; /* Add this line for the transition effect */
+    backdrop-filter: blur(20px); /* Adjust the blur amount as needed */
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+button{
+    user-select: none;
+}
+
+.gradient-container {
+    text-align: center;
+}
+
+
+#copy-button{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgb(26, 26, 26);
+    cursor: pointer;
+}
+
+/* Styles for the modal container */
+.modal-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+/* Styles for the modal content */
+.modal-content {
+    background-color: #202020;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: scale-up 0.3s ease;
+    transform-origin: center center;
+}
+
+
+/* Keyframe animation for scale-up */
+@keyframes scale-up {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Styles for the message modal */
+.message-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    z-index: 1000;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes scale-down {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+/* Apply the animation to the element with the 'scale-down' animation */
+#message-modal {
+    /* Set initial styles for the element */
+    transform: scale(1);
+    opacity: 1;
+
+    /* Set animation properties */
+    animation-name: scale-down;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+/* Styles for the message content */
+.message-content {
+    text-align: center;
+}
+
+.property-name{
+    display: inline-block;
+    font-weight: 700;
+    color: #2bdecf;
+}
+
+.comment{
+    color: #a1a1a1;
+    display: inline-block;
+}
+
+.gradientClass{
+    color: #ff4be2;
+    display: inline-block;
+}
+
+/* .header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    column-gap: 200px;
+} */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(223, 223, 223, 0.105); 
+    color: white; /* Set your desired text color */
+    padding: 10px 20px; /* Add padding to create space around the text */
+    position: relative; /* Needed for pseudo-element positioning */
+    backdrop-filter: blur(48px);
+    -webkit-backdrop-filter: blur(48px);
+    border-bottom: 2px solid #ffffff; /* Set border properties */
+    z-index: 1;
+}
+
+
+.header-text {
+    margin: 0;
+    font-size: 14px; /* Set your desired font size */
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-center{
+    font-size: 40px;
+    font-family: 'Inter', sans-serif;
+    cursor: default;
+    user-select: none;
+}
+
+.left {
+    order: 1; /* Controls the order of appearance */
+}
+
+.center {
+    order: 2;
+}
+
+.right {
+    order: 3;
+}
+
+#change-color-button{
+    margin: 0;
+    padding: 15px 20px;
+    border: none;
+    box-shadow: 4px 3px 20px rgba(0, 0, 0, 0.614);
+    cursor: pointer;
+    border-radius: 30px;
+    background-image: linear-gradient(148deg, #ffdead, #ffa04c);
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    margin-left: -10px;
+}
+
+#change-color-button:active{
+    cursor: grabbing;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+}
+
+/* Styles for the modal trigger icon (e.g., a Font Awesome icon) */
+#modal-trigger-icon {
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.header-container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white; /* Set your desired text color */
+    padding: 10px 20px; /* Add padding to create space around the text */
+    position: relative; /* Needed for pseudo-element positioning */
+    z-index: 1;
+    margin-top: 450px;
+}
+
+
+.header-text2 {
+    margin: 0;
+    font-size: 14px; /* Set your desired font size */
+    cursor: pointer;
+    user-select: none;
+    margin-top: 15px;
+}
+
+.header-center2{
+    font-size: 40px;
+    font-family: 'Inter', sans-serif;
+    cursor: default;
+    user-select: none;
+}
+
+#undo-button{
+    width: 75px;
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 4px 3px 30px rgba(0, 0, 0, 0.457);
+    font-family: 'Inter', sans-serif;  
+    /* background: linear-gradient(222deg, #600db9, #dab2cb); */
+    /* background: linear-gradient(310deg, #28f4d3, #44436a); */
+    background: linear-gradient(336deg, #eec584, #7b4f21);
+}
+
+.two-row-container{
+    margin-top: -13px;
+}
+
+.two-row-container p{
+    font-size:10px;
+    color: #343434;
+    user-select: none;
+    margin: 0;
+    margin-left: -25px;
+    margin-top: 10px;
+    display: inline-block;
+
+}
