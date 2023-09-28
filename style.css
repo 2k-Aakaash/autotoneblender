@@ -147,7 +147,7 @@ button{
     position: relative; /* Needed for pseudo-element positioning */
     backdrop-filter: blur(48px);
     -webkit-backdrop-filter: blur(48px);
-    border-bottom: 2px solid #ffffff; /* Set border properties */
+    border-bottom: 1px solid #e0e0e0; /* Set border properties */
     z-index: 1;
 }
 
