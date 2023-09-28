@@ -2,7 +2,7 @@
 
 Gradient Generator is a web application that allows you to create beautiful and random gradients for your projects. It provides a simple and intuitive interface for generating, copying, and exporting gradients in CSS format.
 
-![Gradient Generator Screenshot](screenshot.png)
+![Gradient Generator Screenshot]([screenshot.png](https://ik.imagekit.io/026k2i7ys/autotoneblender.PNG?updatedAt=1695920508466))
 
 ## Features
 
