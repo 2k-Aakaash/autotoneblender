@@ -26,10 +26,6 @@ You don't need to install anything to use Gradient Generator. Simply open the [l
 3. Click the "Undo" button to go back to the previous gradient.
 4. Click the "Convert to PNG" button to export the current gradient as a PNG image. (In future)
 
-## Acknowledgments
-
-- Special thanks to [ChatGPT]([https://www.openai.com](https://openai.com/blog/chatgpt)) for providing the AI-powered assistance for this project.
-
 
 ---
 Best,
